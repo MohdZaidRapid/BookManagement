@@ -10,6 +10,7 @@ A simple Node.js + Express REST API for managing a bookstore with:
 
 ---
 
+
 ## 🚀 Getting Started
 
 ### 1. Clone and Install
@@ -231,3 +232,6 @@ or
 {
   "message": "Book not found"
 }
+
+# for testing run 
+npm  test
