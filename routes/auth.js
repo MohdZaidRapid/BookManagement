@@ -41,7 +41,6 @@ router.post("/register", async (req, res) => {
   res.status(201).json({ message: "User registered" });
 });
 
-
 /**
  * @swagger
  * /auth/login:
@@ -67,10 +66,10 @@ router.post("/login", async (req, res) => {
 
   const token = jwt.sign(
     { id: user.id, email: user.email },
-    "your_jwt_secret",
+    process.env.SECRET_KEY,
     { expiresIn: "1h" }
   );
-  res.json({ token });
+  res.status(201).json({ token });
 });
 
 module.exports = router;
