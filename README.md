@@ -16,10 +16,10 @@ A simple Node.js + Express REST API for managing a bookstore with:
 ### 1. Clone and Install
 
 ```bash
-git clone https://github.com/yourusername/bookstore-api.git
-cd bookstore-api
+git clone https://github.com/MohdZaidRapid/BookManagement.git
+cd BookManagement
 npm install
-node app.js
+npm run start
 
 
 [swaager api ](http://localhost:3000/api-docs/)
